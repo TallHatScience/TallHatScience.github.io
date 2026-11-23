@@ -32,7 +32,9 @@ a.btn .ic{width:44px;height:44px;border-radius:12px;background:var(--bg);display
 .found{background:color-mix(in srgb,var(--pop) 14%,var(--bg));border:1px solid color-mix(in srgb,var(--pop) 45%,var(--bg));border-radius:14px;padding:12px 14px;font-size:15px;line-height:1.45;width:100%}
 .found b{color:var(--pop)}
 footer{color:var(--muted);font-size:13px}
-@media (prefers-reduced-motion:no-preference){.jeff .hat{animation:tip 3s ease-in-out infinite;transform-origin:66px 118px}}
+@media (prefers-reduced-motion:no-preference){.jeff .hat{animation:tip 3s ease-in-out infinite;transform-origin:66px 118px}
+  .jeff .wave{animation:wave 1.6s ease-in-out infinite;transform-origin:68px 196px}}
+@keyframes wave{0%,100%{transform:rotate(0deg)}25%{transform:rotate(-28deg)}50%{transform:rotate(4deg)}75%{transform:rotate(-24deg)}}
 @keyframes tip{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
 </style>
 </head>
@@ -42,7 +44,8 @@ footer{color:var(--muted);font-size:13px}
     <g class="hat"><rect x="54" y="6" width="24" height="104" rx="3" fill="var(--hat)"/><rect x="54" y="92" width="24" height="8" fill="var(--ink)"/><rect x="38" y="110" width="56" height="10" rx="5" fill="var(--brim)"/></g>
     <g fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="66" cy="152" r="30" fill="var(--bg)"/><circle cx="56" cy="152" r="6"/><circle cx="77" cy="152" r="6"/><path d="M56 167 Q66 175 77 166"/>
-      <path d="M66 182 Q72 214 66 244"/><path d="M68 196 L96 178 M66 200 L40 222"/><path d="M66 244 L82 290 M66 244 L50 290"/></g><g fill="var(--bg)" stroke="var(--ink)" stroke-width="4"><circle cx="98" cy="177" r="5"/><circle cx="38" cy="224" r="5"/></g>
+      <path d="M66 182 Q72 214 66 244"/><path d="M66 200 L40 222"/><path d="M66 244 L82 290 M66 244 L50 290"/></g><g fill="var(--bg)" stroke="var(--ink)" stroke-width="4"><circle cx="38" cy="224" r="5"/></g>
+      <g class="wave"><path d="M68 196 L96 178" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/><circle cx="98" cy="177" r="5" fill="var(--bg)" stroke="var(--ink)" stroke-width="4"/></g>
   </svg>
   <h1>Tall Hat Science</h1>
   <p class="tag">Real science, one silly everyday thing at a time.</p>
